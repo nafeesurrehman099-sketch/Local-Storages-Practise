@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Practice</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <div class="card shadow p-4 mx-auto" style="max-width: 500px;">
+
+            <h2 class="text-center mb-4">Local Storage Practice</h2>
+
+            <label class="form-label">Enter Your Name</label>
+            <input type="text" id="nameBox" class="form-control mb-3" placeholder="Enter your name">
+
+            <label class="form-label">Enter Your Age</label>
+            <input type="number" id="ageBox" class="form-control mb-3" placeholder="Enter your age">
+
+            <div class="d-grid gap-2">
+
+                <button class="btn btn-primary" onclick="saveData()">
+                    Save Data
+                </button>
+
+                <button class="btn btn-success" onclick="showData()">
+                    Show Data
+                </button>
+
+                <button class="btn btn-danger" onclick="deleteData()">
+                    Delete Data
+                </button>
+
+                <button class="btn btn-dark" onclick="clearData()">
+                    Clear All Data
+                </button>
+
+            </div>
+
+            <div class="mt-4">
+                <h5>Output:</h5>
+                <div id="outputBox" class="alert alert-info">
+                    Your data will appear here.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
